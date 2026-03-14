@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Đại học Khoa học Tự nhiên</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      p {text-align: center; font-size: 20pt;}
+
+      #post1 {color: blue;}
+      .colorRed {color: red;}
+      .borderDouble{border: 10px double #fff;}
+    </style>
+  </head>
+  <body>
+    <h1>Ví dụ HTML CSS JavaScript cơ bản</h1>
+    
+    <p>Đây là một đoạn văn bản sử dụng thẻ p</p>
+
+    <p style="text-align: right; font-size: 10pt;">Đây là một đoạn văn bản khác</p>
+
+    <p id="post1" class="colorRed">!important dùng cho để chọn CSS có độ ưu tiên cao nhất </p>
+
+    <div style="width: 50%; background-color: brown; padding-bottom: 20px;">
+      <img src="img/CSS3.png" alt="" style="width: 10%;">
+    </div>
+
+    <div class="borderDouble" style="width: 50%; background-color: blueviolet; margin-top: 20px;">
+      <img src="img/CSS3.png" alt="" style="width: 10%;">
+    </div>
+
+    <p style="text-transform: uppercase;">Viết hoa văn bản</p>
+
+    <button onclick="helloworld()">Hello World!</button>
+
+    <p id="demo"></p>
+
+    <div id="post"></div>
+    <button onclick="getpost()">Hiển thị nội dung</button>
+
+
+    <script src="js/script.js"></script>
+    <script>
+      var name = "Linh"; // Biến
+      let age = 30; // Biến
+      const company = "Trường Đại học Khoa học Tự nhiên"; // Hằng
+      const PI = 3.14; // Hằng
+
+
+      var cong = 1 + 2 + 'a' + 3 + 4 + 'b';
+      alert(cong);
+      //Dấu cộng;
+      // Nếu 2 số thì sẽ thực hiện phép cộng
+      // Nếu 1 trong 2 là chuỗi thì sẽ thực hiện phép nối chuỗi
+
+      
+      var a = 10;
+      var b = '10';
+      console.log(a == b); //So sánh giá trị: true;
+      console.log(a === b); // So sánh giá trị và kiểu dữ liệu: false;
+      // Data type - Kiểu dữ liệu: number, string, boolean, null, underfined, object, array.
+
+      //alert("Hello " + name);
+
+      function helloworld() {
+        alert('Hello World!');
+      }
+
+      function myFunction(a, b) {
+      return a * b;
+      }
+      var x = myFunction(4, 3);
+      console.log("x = " + x);
+
+      document.getElementById("demo").innerHTML = "Trường Đại học Khoa học Tự nhiên";
+
+      function getpost() {
+        document.getElementById("post").innerHTML = `
+        Dưới cái nắng vàng của Jumeirah, bãi biển cát trắng vốn là điểm đến yêu thích của hơn 240.000 người Anh giờ đây đã mất cảnh náo nhiệt. Những chiếc ô che nắng được gập gọn, nằm cạnh hàng trăm ghế tắm nắng trống không. Tiếng nhạc vẫn vang lên từ các quán bar, nhưng không có bóng dáng khách.`;
+      }
+    </script>
+  </body>
+</html>
