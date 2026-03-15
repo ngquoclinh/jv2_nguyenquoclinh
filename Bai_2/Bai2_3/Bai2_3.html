@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bài 2.3</title>
+    <style>
+      form {
+        width: 500px;
+        background-color: #f2f2f2;
+        padding: 20px
+      }
+      input[type="text"], select {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      label {
+        font-size: 16px;
+        padding: 10px 0px 5px 0px;
+        display: block;
+      }
+
+      input[type="submit"] {
+        display: block;
+        background-color: green;
+        padding: 10px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5px;
+        color: white;
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using CSS to style an HTML Form</h1>
+    <form action="">
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" placeholder="Your name..."><br>
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Your last name..."><br>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="au">Australia</option>
+        <option value="ca">Canada</option>
+        <option value="us">United States</option>
+      </select><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
