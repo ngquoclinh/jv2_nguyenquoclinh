@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1.4</title>
+
+    <div th:replace="unit_css :: cssFragment"></div>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Component</th>
+    <th>Display</th>
+  </tr>
+  <tr>
+    <td>Input text</td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Textarea</td>
+    <td><textarea cols="50" rows="5"></textarea></td>
+  </tr>
+  <tr>
+    <td>Button</td>
+    <td><button type="button">Click me</button></td>
+  </tr>
+  <tr>
+    <td>Radio</td>
+    <td>
+      <label><input type="radio" name="button_radio" value="1" checked>Option 1</label><br>
+      <label><input type="radio" name="button_radio" value="2">Option 2</label><br>
+      <label><input type="radio" name="button_radio" value="3">Option 3</label>
+    </td>
+  </tr>
+  <tr>
+    <td>Multiple selection</td>
+    <td>
+      <label><input type="checkbox" name="button_checkbox" value="1">Option 1</label><br>
+      <label><input type="checkbox" name="button_checkbox" value="2" checked>Option 2</label><br>
+      <label><input type="checkbox" name="button_checkbox" value="3">Option 3</label>
+    </td>
+  </tr>
+  <tr>
+    <td>Dropdown</td>
+    <td>
+      <select name="dropdown" id="dd">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>File select</td>
+    <td><input type="file"></td>
+  </tr>
+</table>
+</body>
+</html>
